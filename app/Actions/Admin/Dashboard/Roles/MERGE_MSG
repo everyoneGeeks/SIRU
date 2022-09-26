@@ -1,0 +1,5 @@
+Merge branch 'dev' of https://github.com/moh-abdullah-it/siru into website
+
+# Conflicts:
+#	resources/js/Components/Main/Auth/Admin/AuthReset.vue
+#	resources/js/Components/Main/Auth/Admin/CheckReset.vue

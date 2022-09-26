@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@363;400&display=swap');
+body{
+    font-family: 'Cairo', sans-serif!important;
+}
+
+/*Header and nav*/
+.header-color{
+    background-color: #211713;
+    opacity: 0.9;
+}
+header{
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+header > div{
+    position: relative;
+    z-index: 9999;
+}
+header > div > nav{
+    background-color: #211713;
+}
+header #logo{
+    max-width: 100px;
+}
+.hover\:hover_effect:hover{
+    background-color: #a79a88;
+}
+.menu, .about {
+    color: #725145;
+}
+.border-color {
+    border-color: #B79B74;
+}
+header nav ul li{
+    position: relative;
+}
+header nav ul li.dropdown-wrapper:before{
+    content: '';
+    border: solid #fff;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    right: -3px;
+    top: 20px;
+}
+[dir=rtl] header nav ul li.dropdown-wrapper:before{
+    right : auto;
+    left: -3px;
+    top: 20px;
+}
+.side-buttons{
+    position: absolute;
+    right: 0px;
+}
+[dir=rtl] .side-buttons{
+    position: absolute;
+    right:auto;
+    left: 0px;
+}
+.bg-reg_color{
+    background-color: #C1A37E;
+}
+.text-reg_color{
+    color: #C1A37E;
+}
+.border-reg_color{
+    border-color: #C1A37E;
+}
+
+/*footer styling*/
+footer{
+    background-image: url('images/site/bg-footer2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer .overlay{
+    background: rgba(33, 23, 19, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+.bg-footer-copy{
+    background-color: rgba(20, 8, 3, 0.4);
+}
+
+/*Hero carousel*/
+.hero{
+    direction: ltr;
+}
+.hero .carousel-indicators ol{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    z-index: 1100;
+}
+.hero .carousel-item {
+    float: left;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-right: -100%;
+    backface-visibility: hidden;
+}
+.hero .carousel-item.active {
+    left: 0;
+}
+.slide-content{
+    max-width: 600px;
+    z-index: 1100;
+}
+.bg-overlay{
+    background: rgba(33, 23, 19, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+/*About Section*/
+.about .card{
+    position: absolute;
+    top: 8%;
+    bottom: 8%;
+    width: 120%;
+    z-index: 1000;
+}
+
+
+
+
+@media (max-width: 1280px) {
+    header nav ul li.dropdown-wrapper:before{
+        right: 88px;
+    }
+    [dir=rtl] header nav ul li.dropdown-wrapper:before{
+        left: 88px;
+    }
+    .side-buttons{
+        right: 0px;
+        left: 0px;
+    }
+    [dir=rtl] .side-buttons{
+        right:0px;
+        left: 0px;
+    }
+    .about .card{
+        position: relative;
+        top: auto;
+        bottom: auto;
+        width: 100%;
+        z-index: 1000;
+    }
+}
